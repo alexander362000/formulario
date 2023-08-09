@@ -16,17 +16,19 @@ const terminosCheckbox = document.getElementById("terminos");
 
 boton.addEventListener("click", function() {
 
-
-    if (!nombre || !apellido || !email || !password1 || !password2 || !terminosCheckbox.checked) {
+    if (nombre==null || apellido==null || email==null || password1==null || password2==null || !terminosCheckbox.checked) {
         showAlertError()
+        alert("1")
       }
 
       if (password1.length < 6) {
         showAlertError()
+        alert("2")
       }
 
-      if (password1 !== password2) {
+      if (password1.value !== password2.value) {
         showAlertError()
+        alert("3")
       }
       else{
         showAlertSuccess()
