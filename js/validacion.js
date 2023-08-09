@@ -6,6 +6,7 @@ function showAlertError() {
     document.getElementById("alert-danger").classList.add("show");
 }
 
+
 document.getElementById("regBtn").addEventListener("click", function() {
     // Get input values
     const nombre = document.getElementById("nombre").value;
@@ -27,4 +28,4 @@ document.getElementById("regBtn").addEventListener("click", function() {
     } else {
         showAlertSuccess();
     }
-});
+
