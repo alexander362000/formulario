@@ -9,9 +9,9 @@ function showAlertError() {
 const boton = document.getElementById("regBtn");
 const password1 = document.getElementById("password1");
 const password2 = document.getElementById("password2");
-const nombre = document.getElementById("nombre").value;
-const apellido = document.getElementById("apellido").value;
-const email = document.getElementById("email").value;
+const nombre = document.getElementById("nombre");
+const apellido = document.getElementById("apellido");
+const email = document.getElementById("email");
 const terminosCheckbox = document.getElementById("terminos");
 
 boton.addEventListener("click", function() {
@@ -31,6 +31,7 @@ boton.addEventListener("click", function() {
       else{
         showAlertSuccess()
       }
+
 });
 
 
